@@ -75,7 +75,7 @@ img {
 #app{
     height: 100vh;
     overflow: hidden;
-    background-color: grey;
+    background-color: black;
     display: flex;
     flex-direction: column;
 }
@@ -89,6 +89,15 @@ img {
     overflow: auto;
 }
 
+.button-main {
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: grey;
+    border-radius: 3px;
+    border: 3px solid black;
+    padding: 6px;
+}
 /*CENTER BODY*/
 .row-user {
     display: flex;
