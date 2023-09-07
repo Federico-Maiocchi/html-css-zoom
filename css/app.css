@@ -16,6 +16,59 @@ img {
     padding: 30px;
 }
 
+.container-w-large
+{
+    max-width: 100%;
+    padding: 30px;
+}
+/*COL settings*/
+.col-1 {
+    width: calc((100% / 12) * 1);
+}
+
+.col-2 {
+    width: calc((100% / 12) * 2);
+}
+
+.col-3 {
+    width: calc((100% / 12) * 3);
+}
+
+.col-4 {
+    width: calc((100% / 12) * 4);
+}
+
+.col-5 {
+    width: calc((100% / 12) * 5);
+}
+
+.col-6 {
+    width: calc((100% / 12) * 6);
+}
+
+.col-7 {
+    width: calc((100% / 12) * 7);
+}
+
+.col-8{
+    width: calc((100% / 12) * 8);
+}
+
+.col-9 {
+    width: calc((100% / 12) * 9);
+}
+
+.col-10 {
+    width: calc((100% / 12) * 10);
+}
+
+.col-11 {
+    width: calc((100% / 12) * 11);
+}
+
+.col-12 {
+    width: 100%;
+}
 /*MAIN*/
 main {
     height: 100vh;
@@ -25,17 +78,30 @@ main {
     flex-wrap: wrap;
     flex-direction: column;
 }
-/* DEBUG */
-
-.debug .img {
-    width: 100px;
-}
 
 .users-screen {
     flex-grow: 1;
 }
+
+/*END-MAIN*/
 .bottom-bar {
     background-color: aqua;
-    padding: 30px;
 }
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.bottom-bar [class^='col-'] {
+    border: 1px solid black;
+    padding: 15px;
+}
+/* DEBUG */
+
+
+
+
+
 
