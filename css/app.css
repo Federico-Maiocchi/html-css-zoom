@@ -13,6 +13,29 @@ img {
 .container {
     max-width: 800px;
     margin: 0 auto;
+    padding: 30px;
 }
 
+/*MAIN*/
+main {
+    height: 100vh;
+    min-width: 1px;
+    background-color: grey;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
 /* DEBUG */
+
+.debug .img {
+    width: 100px;
+}
+
+.users-screen {
+    flex-grow: 1;
+}
+.bottom-bar {
+    background-color: aqua;
+    padding: 30px;
+}
+
