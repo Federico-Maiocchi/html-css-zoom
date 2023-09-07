@@ -7,15 +7,15 @@
 
 img {
     max-width: 100%;
-    display: inline;
+    display: inline-block;
 }
 
 /* CONTAINER */
 .container {
     max-width: 900px;
     margin: 0 auto;
-    padding: 30px;
-    flex-grow: 1;
+    padding: 15px;
+    
 }
 
 .container-w-large
@@ -80,19 +80,15 @@ img {
     flex-direction: column;
 }
 
-main {
+.main-zoom {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     border: 1px solid black;
     flex-grow: 1;
+    overflow: auto;
 }
 
-.users-screen {
-    display: flex;
-    
-    padding: 30px;
-}
 /*CENTER BODY*/
 .row-user {
     display: flex;
@@ -102,21 +98,29 @@ main {
 
 .col-user {
     border: 1px solid black;
-    width: calc(100% / 7);
-    height: calc(100% / 5);
+    max-width: calc(100% / 5);
+    max-height: calc(100% / 5);
+    
 }
 /*CARDS*/
 .card-users {
     position: relative;
 }
+
+span {
+    padding: 0;
+}
+
+.user-name{
+    position: absolute;
+}
+
 .user-name , 
 .user-icon {
-    position: absolute;
-    background-color: red;
+    background-color: rgba(0, 0, 0, 0.6);
     color: white;
-    padding: 3px;
-    font-size: 12px;
-    position: absolute;
+    padding: 4px;
+    font-size: 14px;
     left: 2px;
     bottom: 2px;
 }
