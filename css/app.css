@@ -1,4 +1,4 @@
-/*reset*/
+/*RESET*/
 * {
     margin: 0;
     padding: 0;
@@ -8,3 +8,11 @@
 img {
     max-width: 100%;
 }
+
+/* CONTAINER */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* DEBUG */
