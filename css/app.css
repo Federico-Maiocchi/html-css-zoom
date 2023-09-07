@@ -7,19 +7,21 @@
 
 img {
     max-width: 100%;
+    display: inline;
 }
 
 /* CONTAINER */
 .container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 30px;
+    flex-grow: 1;
 }
 
 .container-w-large
 {
     max-width: 100%;
-    padding: 30px;
+    margin: 0 auto;
 }
 /*COL settings*/
 .col-1 {
@@ -72,17 +74,45 @@ img {
 /*MAIN*/
 main {
     height: 100vh;
-    min-width: 1px;
     background-color: grey;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    border: 1px solid black;
 }
 
 .users-screen {
+    display: flex;
     flex-grow: 1;
+    padding: 30px;
+}
+/*CENTER BODY*/
+.row-user {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
 }
 
+.col-user {
+    border: 1px solid black;
+    width: calc(100% / 7);
+    height: calc(100% / 5);
+}
+/*CARDS*/
+.card-users {
+    position: relative;
+}
+.user-name , 
+.user-icon {
+    position: absolute;
+    background-color: red;
+    color: white;
+    padding: 3px;
+    font-size: 12px;
+    position: absolute;
+    left: 2px;
+    bottom: 2px;
+}
 /*END-MAIN*/
 .bottom-bar {
     background-color: aqua;
